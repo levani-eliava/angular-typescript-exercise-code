@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web page</title>
+</head>
+<body>
+
+<h4 *ngFor='let item of fruit'>
+  {{fruit}}
+</h4>
+
+
+
+
+<h1 style="text-align: center;">HELLO</h1>
+<hr style="background-color:gray;">
+<button (click)= 'tonggleCard()'>Tonggle card</button>
+<hr style="background-color:gray;">
+
+
+<div *ngIf="toggle; else noCard">
+<app-form></app-form>
+<app-form></app-form>
+<app-form></app-form>
+ 
+</div>
+
+
+<ng-template #noCard>
+    <p>CARD are hidden!!!</p>
+
+</ng-template>
+
+
+
+
+
+
+
+</body>
+</html>
